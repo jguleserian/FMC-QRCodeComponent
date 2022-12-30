@@ -1,20 +1,15 @@
+/* VARIABLES & RESET */
+
+
+/* converted colors to hexidecimal format so they could be used as variables */
+
 :root {
-    --color-purple: hsl(228, 45%, 44%);
-    --color-white: hsl(0, 0%, 100%);
-    --light-gray: hsl(212, 45%, 89%);
-    --color-grayish-blue: hsl(220, 15%, 55%);
-    --color-dark-blue: hsl(218, 44%, 22%);
+    --color-purple: #3e52a3;
+    --color-white: #ffffff;
+    --color-light-gray: #d6e2f0;
+    --color-grayish-blue: #7b879d;
+    --color-dark-blue: #1f3251;
     box-sizing: border-box;
-}
-
-
-/* CONTAINERS */
-
-body {
-    font-family: 'Outfit', sans-serif;
-    padding: 0;
-    margin: 0;
-    background-color: hsl(212, 45%, 89%);
 }
 
 * {
@@ -22,9 +17,17 @@ body {
     padding: 0;
 }
 
+
+/* CONTAINERS */
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--color-light-gray);
+}
+
 div.card {
-    border-radius: 3%;
-    background-color: hsl(0, 0%, 100%);
+    border-radius: 4%;
+    background-color: var(--color-white);
     width: 300px;
     margin: 100px auto 0 auto;
     text-align: center;
@@ -41,22 +44,25 @@ div.all-text {
 img {
     width: 270px;
     margin-top: 15px;
-    border-radius: 5%;
+    border-radius: 3%;
 }
 
 p.bold-text {
     font-weight: 700;
-    font-size: 20px;
+    font-size: 21px;
     margin: 0 15px 15px 15px;
-    color: hsl(218, 44%, 22%);
+    color: var(--color-dark-blue);
 }
 
 p.text {
     font-weight: 400;
     font-size: 15px;
-    color: hsl(220, 15%, 55%);
+    color: var(--color-grayish-blue);
     margin: 0 12px 20px 12px;
 }
+
+
+/* CLASSES | IDs Only */
 
 .attribution {
     font-size: 11px;
@@ -67,6 +73,5 @@ p.text {
     color: var(--color-purple);
 }
 
-@media screen only and (max-width: 375px) {}
 
-@media screen only and (max-width: 1440px) {}
+/* @media unnecessary since image is non-responsive */
